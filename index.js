@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * selects-related Input Plugin
  *
@@ -23,7 +25,7 @@ module.exports = {
   inputs: {
     select1: {
       validation: {
-        function: 'selectValidation',
+        function: 'selectsRelatedValidation',
         on: 'change',
       },
       script: {
@@ -52,7 +54,7 @@ module.exports = {
     },
     select2: {
       validation: {
-        function: 'selectValidation',
+        function: 'selectsRelatedValidation',
         on: 'change',
       },
       label: 'Select one',
@@ -76,6 +78,10 @@ module.exports = {
       },
     },
   },
-  html: `<label for="{{select1.id}}">{{select1.label}}</label><select id="{{select1.id}}" name="{{select1.name}}">{% for option in select1.options %}<option value="{{option.value}}" {% if option.value == select1.value %}selected{% endif %}>{{option.label}}</option>{% endfor %}</select></label>
-      <label for="{{select2.id}}">{{select2.label}}</label><select id="{{select2.id}}" name="{{select2.name}}">{% for option in select2.options %}<option value="{{option.value}}" {% if option.value == select2.value %}selected{% endif %}>{{option.label}}</option>{% endfor %}</select></label>`,
+  html: `<label for="{{select1.id}}">{{select1.label}}</label><select id="{{select1.id}}" name="{{select1.name}}">
+      {% for option in select1.options %}<option value="{{option.value}}" {% if option.value == select1.value %}selected{% endif %}>{{option.label}}</option>{% endfor %}
+    </select></label>
+      <label for="{{select2.id}}">{{select2.label}}</label><select id="{{select2.id}}" name="{{select2.name}}">
+      {% for option in select2.options %}<option value="{{option.value}}" {% if option.value == select2.value %}selected{% endif %}>{{option.label}}</option>{% endfor %}
+    </select></label>`,
 };
