@@ -80,8 +80,8 @@ module.exports = {
   },
   html: `<label for="{{select1.id}}">{{select1.label}}</label><select id="{{select1.id}}" name="{{select1.name}}">
       {% for option in select1.options %}<option value="{{option.value}}" {% if option.value == select1.value %}selected{% endif %}>{{option.label}}</option>{% endfor %}
-    </select></label>
+    </select>
       <label for="{{select2.id}}">{{select2.label}}</label><select id="{{select2.id}}" name="{{select2.name}}">
       {% for option in select2.options %}<option value="{{option.value}}" {% if option.value == select2.value %}selected{% endif %}>{{option.label}}</option>{% endfor %}
-    </select></label>`,
+    </select>`,
 };
