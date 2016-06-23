@@ -1,0 +1,55 @@
+{
+  "name": "input-plugin-selects-related",
+  "version": "0.0.1",
+  "description": "Input Plugin for a two select inputs with related data",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run nyc",
+    "pretest": "npm run lint",
+    "ava": "ava | tap-diff",
+    "ava:watch": "ava --watch | tap-diff",
+    "nyc": "nyc --all npm run ava",
+    "lint": "eslint index.js lib && eslint -c ./.eslintrc-ava.yml tests",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:punchcard-cms/input-plugin-selects-related.git"
+  },
+  "contributors": [
+    "Scott Nath <snath@us.ibm.com>"
+  ],
+  "license": "Apache-2.0",
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.14.0",
+    "coveralls": "^2.11.9",
+    "eslint": "^2.10.0",
+    "eslint-config-punchcard": "^1.0.1",
+    "nunjucks": "^2.4.2",
+    "nyc": "^6.0.0",
+    "punchcard-content-types": "git+ssh://git@github.com/scottnath/content-types.git#ip-tests-update",
+    "tap-diff": "^0.1.1",
+    "validator": "^5.2.0"
+  },
+  "engines": {
+    "node": "5.7",
+    "npm": "^3.6"
+  },
+  "keywords": [
+    "input-plugin",
+    "punchcard-cms"
+  ],
+  "nyc": {
+    "exclude": [
+      "tests/**/*"
+    ]
+  },
+  "ava": {
+    "files": [
+      "tests/*.js"
+    ],
+    "failFast": true,
+    "tap": true
+  }
+}
