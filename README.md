@@ -1,4 +1,4 @@
-selects-related Input Plugin [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+selects-related Input Plugin [![Build Status](https://travis-ci.org/punchcard-cms/input-plugin-selects-related.svg?branch=master)](https://travis-ci.org/punchcard-cms/input-plugin-selects-related) [![Coverage Status](https://coveralls.io/repos/github/punchcard-cms/input-plugin-selects-related/badge.svg?branch=master)](https://coveralls.io/github/punchcard-cms/input-plugin-selects-related?branch=master) [![NSP Status](https://nodesecurity.io/orgs/punchcard-cms/projects/50880dc9-fc99-49ab-9e52-7cb143303d4b/badge)](https://nodesecurity.io/orgs/punchcard-cms/projects/50880dc9-fc99-49ab-9e52-7cb143303d4b)
 ---
 
 Input Plugin for a two select inputs with related data
@@ -6,12 +6,3 @@ Input Plugin for a two select inputs with related data
 ## License
 
 Apache-2.0
-
-[npm-image]: https://badge.fury.io/js/input-plugin-selects-related.svg
-[npm-url]: https://npmjs.org/package/input-plugin-selects-related
-[travis-image]: https://travis-ci.org/punchcard-cms/input-plugin-selects-related.svg
-[travis-url]: https://travis-ci.org/punchcard-cms/input-plugin-selects-related
-[daviddm-image]: https://david-dm.org/punchcard-cms/input-plugin-selects-related.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/punchcard-cms/input-plugin-selects-related
-[coveralls-image]: https://coveralls.io/repos/punchcard-cms/input-plugin-selects-related/badge.svg
-[coveralls-url]: https://coveralls.io/r/punchcard-cms/input-plugin-selects-related
