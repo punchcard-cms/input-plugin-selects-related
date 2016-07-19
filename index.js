@@ -20,7 +20,7 @@ module.exports = {
     selectsRelatedValidation: validation,
   },
   scripts: {
-    selectRelated: script,
+    selectsRelated: script,
   },
   inputs: {
     select1: {
@@ -29,8 +29,7 @@ module.exports = {
         on: 'change',
       },
       script: {
-        function: 'selectRelated',
-        on: 'change',
+        function: 'selectsRelated',
       },
       label: 'Select one',
       options: [
@@ -57,7 +56,10 @@ module.exports = {
         function: 'selectsRelatedValidation',
         on: 'change',
       },
-      label: 'Select one',
+      script: {
+        function: 'selectsRelated',
+      },
+      label: 'Select two',
       options: [
         { label: 'One',
           value: 'one',

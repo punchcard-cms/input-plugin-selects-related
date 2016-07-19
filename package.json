@@ -9,7 +9,7 @@
     "ava": "ava | tap-diff",
     "ava:watch": "ava --watch | tap-diff",
     "nyc": "nyc --all npm run ava",
-    "lint": "eslint index.js lib && eslint -c ./.eslintrc-ava.yml tests",
+    "lint": "eslint index.js lib/validation.js && eslint -c ./.eslintrc-ava.yml tests",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
@@ -42,7 +42,8 @@
   ],
   "nyc": {
     "exclude": [
-      "tests/**/*"
+      "tests/**/*",
+      "lib/script.js"
     ]
   },
   "ava": {
