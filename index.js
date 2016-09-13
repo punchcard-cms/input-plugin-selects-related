@@ -48,9 +48,6 @@ module.exports = {
         },
       ],
       type: 'select',
-      settings: {
-        empty: true,
-      },
     },
     select2: {
       validation: {
@@ -73,9 +70,6 @@ module.exports = {
         },
       ],
       type: 'select',
-      settings: {
-        empty: true,
-      },
     },
   },
   html: `<label for="{{select1.id}}">{{select1.label}}</label><select id="{{select1.id}}" name="{{select1.name}}">
